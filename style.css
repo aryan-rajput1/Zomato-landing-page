@@ -6,7 +6,7 @@
   
   body {
     font-family: "Merriweather", serif;
-    background-color: #ebf2ff;
+    background-color: black;
   }
   
   .button__primary {
@@ -33,7 +33,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #fff;
+    background-color: #000000;
   }
   
   .navbar__brand {
@@ -59,7 +59,7 @@
   }
   
   .nav__item:hover {
-    border: 2px solid blue;
+    border: 1px solid blue;
   }
   
   .hero__image__container {
@@ -75,6 +75,7 @@
   .hero__text {
     font-size: 30px;
     margin: 20px 0;
+    color: white;
   }
   
   .explore__menu__text {
@@ -82,16 +83,25 @@
     margin-top: 50px;
     margin-bottom: 25px;
     text-align: center;
+    color : white;
   }
   
   .food__card {
     background-color: #fff;
     border-radius: 8px;
     margin-bottom: 15px;
+    
   }
-  
+
   .food__card__image__container {
     width: 100%;
+    transition: all 0.5s ease-in-out;
+  }
+  .food__card__image__container :hover {
+    transform: skew(20deg);
+    transform: scale(1.05);
+    border-radius: 10px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   }
   
   .food__image {
@@ -109,6 +119,7 @@
     margin-top: 50px;
     margin-bottom: 25px;
     text-align: center;
+    color : white;
   }
   .restaurant__images__container {
     width: 100%;
